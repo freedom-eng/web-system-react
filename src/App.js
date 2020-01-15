@@ -48,13 +48,16 @@ class App extends Component {
           <MDBNavbar color='indigo' dark expand='md' fixed='top' scrolling>
             <MDBNavbarBrand href='/' className='py-0 font-weight-bold'>
               <Logo style={{ height: '2.5rem', width: '2.5rem' }} />
-              <strong className='align-middle'>MDB React</strong>
+              <strong className='align-middle'>Freedom Engenharia</strong>
             </MDBNavbarBrand>
             <MDBNavbarToggler
               onClick={this.toggleCollapse('mainNavbarCollapse')}
             />
+
             <MDBCollapse id='mainNavbarCollapse' isOpen={collapseID} navbar>
               <MDBNavbarNav right>
+
+
                 <MDBNavItem>
                   <MDBNavLink
                     exact
@@ -179,6 +182,7 @@ class App extends Component {
                   </MDBTooltip>
                 </MDBNavItem>
                 <MDBNavItem className='mr-2'>
+
                   <MDBTooltip
                     placement='bottom'
                     domElement
@@ -197,11 +201,16 @@ class App extends Component {
                     <span>SUPPORT</span>
                   </MDBTooltip>
                 </MDBNavItem>
+
               </MDBNavbarNav>
+
             </MDBCollapse>
           </MDBNavbar>
+
+
           {collapseID && overlay}
           <main style={{ marginTop: '4rem' }}>
+            
             <Routes />
           </main>
           <MDBFooter color='indigo'>

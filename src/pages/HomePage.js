@@ -24,14 +24,17 @@ class HomePage extends React.Component {
       <>
         <MDBEdgeHeader color='indigo darken-3' className='sectionPage' />
         <div className='mt-3 mb-5'>
+          
           <MDBFreeBird>
             <MDBRow>
               <MDBCol
                 md='10'
                 className='mx-auto float-none white z-depth-1 py-2 px-2'
               >
+                
                 <MDBCardBody className='text-center'>
-                  <h2 className='h2-responsive mb-4'>
+                <h1>Freedom Engenharia Home</h1>
+                {/*  <h2 className='h2-responsive mb-4'>
                     <strong className='font-weight-bold'>
                       <img
                         src='https://mdbootstrap.com/img/Marketing/other/logo/logo-mdb-react-small.png'
@@ -78,6 +81,7 @@ class HomePage extends React.Component {
                       <span className='font-weight-bold'>FREE</span>
                     </a>
                   </MDBRow>
+                  */}
                 </MDBCardBody>
               </MDBCol>
             </MDBRow>
