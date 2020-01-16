@@ -13,6 +13,7 @@ import {
   MDBNavLink,
   MDBNav
 } from 'mdbreact';
+import Bomba from './../../components/bomba/Bomba';
 import DocsLink from '../../components/docsLink';
 import SectionContainer from '../../components/sectionContainer';
 
@@ -41,7 +42,7 @@ class AccordionN extends Component {
           </MDBCollapseHeader>
           <MDBCollapse id='collapse1' isOpen={collapseID}>
             <MDBCardBody>
-              Vazio
+              <Bomba />
               </MDBCardBody>
           </MDBCollapse>
         </MDBCard>

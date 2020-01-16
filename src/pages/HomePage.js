@@ -25,64 +25,16 @@ class HomePage extends React.Component {
       <>
         <MDBEdgeHeader color='indigo darken-3' className='sectionPage' />
         <div className='mt-3 mb-5'>
-          
+
           <MDBFreeBird>
             <MDBRow>
               <MDBCol
                 md='10'
                 className='mx-auto float-none white z-depth-1 py-2 px-2'
               >
-                
+
                 <MDBCardBody className='text-center'>
-                <h1>Freedom Engenharia Home</h1>
-                {/*  <h2 className='h2-responsive mb-4'>
-                    <strong className='font-weight-bold'>
-                      <img
-                        src='https://mdbootstrap.com/img/Marketing/other/logo/logo-mdb-react-small.png'
-                        alt='mdbreact-logo'
-                        className='pr-2'
-                      />
-                      Demo App
-                    </strong>
-                  </h2>
-                  <MDBRow />
-                  <p>React Bootstrap with Material Design</p>
-                  <p className='pb-4'>
-                    This application shows the actual use of MDB React
-                    components in the application.
-                  </p>
-                  <MDBRow className='d-flex flex-row justify-content-center row'>
-                    <a
-                      className='border nav-link border-light rounded mr-1 mx-2 mb-2'
-                      href='https://mdbootstrap.com/react/'
-                      target='_blank'
-                      rel='noopener noreferrer'
-                    >
-                      <MDBIcon icon='graduation-cap' className='mr-2' />
-                      <span className='font-weight-bold'>
-                        Official Documentation
-                      </span>
-                    </a>
-                    <a
-                      className='border nav-link border-light rounded mx-2 mb-2'
-                      href='https://mdbootstrap.com/products/react-ui-kit/'
-                      target='_blank'
-                      rel='noopener noreferrer'
-                    >
-                      <MDBIcon far icon='gem' className='mr-2' />
-                      <span className='font-weight-bold'>PRO</span>
-                    </a>
-                    <a
-                      className='border nav-link border-light rounded mx-2 mb-2'
-                      href='https://mdbootstrap.com/docs/react/getting-started/download/'
-                      target='_blank'
-                      rel='noopener noreferrer'
-                    >
-                      <MDBIcon icon='download' className='mr-2' />
-                      <span className='font-weight-bold'>FREE</span>
-                    </a>
-                  </MDBRow>
-                  */}
+                  <h1>Freedom Engenharia Home</h1>
                 </MDBCardBody>
               </MDBCol>
             </MDBRow>
@@ -90,21 +42,7 @@ class HomePage extends React.Component {
           <MDBContainer>
             <MDBRow>
               <MDBCol md='12' className='mt-4'>
-                <h2 className='text-center my-5 font-weight-bold'>
-                  Why is it so great?
-                </h2>
-                <p className='text-center text-muted mb-1'>
-                  Google has designed a Material Design to make the web more
-                  beautiful and more user-friendly.
-                </p>
-                <p className='text-center text-muted mb-1'>
-                  Twitter has created a Bootstrap to support you in faster and
-                  easier development of responsive and effective websites.
-                </p>
-                <p className='text-center text-muted'>
-                  We present you a framework containing the best features of
-                  both of them - Material Design for Bootstrap.
-                </p>
+
                 <hr className='my-5' />
 
                 <MDBRow id='categories'>

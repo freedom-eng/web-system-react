@@ -8,7 +8,7 @@ import {
   MDBIcon,
   MDBAnimation
 } from 'mdbreact';
-import AccordionN from '../accordioN/Accordion';
+import AccordionN from './../../personalizados/accordioN/Accordion';
 import MenuLink from '../../components/menuLink';
 
 const Ambiente = () => {
@@ -24,7 +24,6 @@ const Ambiente = () => {
                   <MDBIcon icon='css3' brand className='indigo-text mr-w' />
                   Meus postos
                   </h1>
-           
               </MDBJumbotron>
             </MDBCol>
           </MDBRow>
