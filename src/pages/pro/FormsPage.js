@@ -34,12 +34,12 @@ const FormsPage = () => {
                 </h3>
               </MDBCardHeader>
               <label htmlFor='defaultFormEmailEx' className='grey-text font-weight-light'>
-                Your email
+                Seu email
               </label>
               <input type='email' id='defaultFormEmailEx' className='form-control' />
 
               <label htmlFor='defaultFormPasswordEx' className='grey-text font-weight-light'>
-                Your password
+                Sua Senha
               </label>
               <input type='password' id='defaultFormPasswordEx' className='form-control' />
 
@@ -51,8 +51,7 @@ const FormsPage = () => {
 
               <MDBModalFooter>
                 <div className='font-weight-light'>
-                  <p>Not a member? Sign Up</p>
-                  <p>Forgot Password?</p>
+                  <p>Esqueceu a senha?</p>
                 </div>
               </MDBModalFooter>
             </MDBCardBody>

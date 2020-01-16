@@ -14,6 +14,7 @@ import {
   MDBAnimation,
   MDBNavLink
 } from 'mdbreact';
+import LoginPage from './../components/Login'
 import './HomePage.css';
 
 class HomePage extends React.Component {

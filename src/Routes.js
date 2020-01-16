@@ -129,6 +129,7 @@ import InputGroupPagePro from './pages/pro/InputGroupPage';
 import GalleryPage from './pages/pro/GalleryPage';
 import DatatableFilterPage from './pages/pro/DatatableFilterPage';
 import TooltipsPagePro from './pages/pro/TooltipsPage';
+import Ambiente from './components/ambiente/ambiente';
 // PRO-END
 
 class Routes extends React.Component {
@@ -144,6 +145,7 @@ class Routes extends React.Component {
         <Route exact path='/modals' component={ModalsNavPage} />
         <Route exact path='/navigation' component={NavigationNavPage} />
         <Route exact path='/tables' component={TablesNavPage} />
+        <Route exact path='/ambiente' component={Ambiente} />
 
         {/* FREE */}
         <Route path='/addons/iframe' component={IframePage} />
