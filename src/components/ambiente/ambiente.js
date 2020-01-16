@@ -19,21 +19,18 @@ const Ambiente = () => {
         <MDBContainer>
           <MDBRow>
             <MDBCol md='12' className='mx-auto'>
-              <MDBJumbotron className='mt-3'>
+              <MDBJumbotron className='mt-12'>
                 <h1 className='text-center'>
                   <MDBIcon icon='css3' brand className='indigo-text mr-w' />
                   Meus postos
                   </h1>
-                <ul className='list-unstyled example-components-list'>
-
-                  <AccordionN />
-
-                </ul>
+           
               </MDBJumbotron>
             </MDBCol>
           </MDBRow>
         </MDBContainer>
       </MDBAnimation>
+      <AccordionN />
     </>
   );
 };
