@@ -23,6 +23,7 @@ import {
   MDBSimpleChart,
   MDBListGroupItem,
 } from 'mdbreact';
+import './Bomba.css'
 
 class Bomba extends React.Component {
   scrollToTop = () => window.scrollTo(0, 0);
@@ -39,7 +40,7 @@ class Bomba extends React.Component {
       <>
         <div className='mt-3 mb-5'>
           <MDBContainer>
-            <MDBRow>
+            <MDBRow >
               <MDBCol md='12' className='mt-4'>
                 <MDBRow id='categories'>
 
@@ -48,9 +49,6 @@ class Bomba extends React.Component {
                       <MDBCol md='4'>
                         <MDBAnimation reveal type='fadeInLeft'>
                           <MDBCard cascade className='my-3 grey lighten-4'>
-
-
-
 
 
                             <MDBCardHeader color='success-color lighten-1'>{bomba.nome}</MDBCardHeader>
