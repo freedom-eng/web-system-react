@@ -14,6 +14,7 @@ import {
   MDBNav
 } from 'mdbreact';
 import Bomba from './../../components/bomba/Bomba';
+import './Accordion.css'
 import DocsLink from '../../components/docsLink';
 import SectionContainer from '../../components/sectionContainer';
 
@@ -37,34 +38,22 @@ class AccordionN extends Component {
 
         <MDBCard className='mt-3'>
           <MDBCollapseHeader onClick={this.toggleCollapse('collapse1')}>
-            Posto 01
+            Posto 01 Ipiranga  <span id="title"> - Rua Senador Álvaro Adolfo, 1788 </span>
               <i className={collapseID === 'collapse1' ? 'fa fa-angle-down rotate-icon' : 'fa fa-angle-down'} />
           </MDBCollapseHeader>
           <MDBCollapse id='collapse1' isOpen={collapseID}>
             <MDBCardBody>
               <Bomba />
-              </MDBCardBody>
+            </MDBCardBody>
           </MDBCollapse>
         </MDBCard>
 
         <MDBCard>
           <MDBCollapseHeader onClick={this.toggleCollapse('collapse2')}>
-            Posto 02
+            Posto 02 Petrobras  <span id="title"> - BR 116 km 26 </span>
               <i className={collapseID === 'collapse2' ? 'fa fa-angle-down rotate-icon' : 'fa fa-angle-down'} />
           </MDBCollapseHeader>
           <MDBCollapse id='collapse2' isOpen={collapseID}>
-            <MDBCardBody>
-              Vazio
-              </MDBCardBody>
-          </MDBCollapse>
-        </MDBCard>
-
-        <MDBCard>
-          <MDBCollapseHeader onClick={this.toggleCollapse('collapse3')}>
-            Posto 03
-              <i className={collapseID === 'collapse3' ? 'fa fa-angle-down rotate-icon' : 'fa fa-angle-down'} />
-          </MDBCollapseHeader>
-          <MDBCollapse id='collapse3' isOpen={collapseID}>
             <MDBCardBody>
               Vazio
               </MDBCardBody>
