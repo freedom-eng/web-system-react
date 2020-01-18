@@ -28,11 +28,11 @@ import './Bomba.css'
 class Bomba extends React.Component {
   scrollToTop = () => window.scrollTo(0, 0);
 
-  bombas = [
-    { nome: "Bomba 01", nivel: 6704, temperatura: 33, agua: 0, vazamento: false },
-    { nome: "Bomba 02", nivel: 7765, temperatura: 34, agua: 1.34, vazamento: true },
-    { nome: "Bomba 03", nivel: 1233, temperatura: 35, agua: 0, vazamento: false },
-    { nome: "Bomba 04", nivel: 7886, temperatura: 33, agua: 0, vazamento: false }
+  tanques = [
+    { nome: "Tanque 01", nivel: 6704, temperatura: 33, agua: 0, vazamento: false },
+    { nome: "Tanque 02", nivel: 7765, temperatura: 34, agua: 1.34, vazamento: true },
+    { nome: "Tanque 03", nivel: 1233, temperatura: 35, agua: 0, vazamento: false },
+    { nome: "Tanque 04", nivel: 7886, temperatura: 33, agua: 0, vazamento: false }
   ]
 
   render() {
@@ -44,37 +44,44 @@ class Bomba extends React.Component {
               <MDBCol md='12' className='mt-4'>
                 <MDBRow id='categories'>
 
-                  {this.bombas.map((bomba) => {
+                  {this.tanques.map((tanque) => {
                     return (
                       <MDBCol md='4'>
                         <MDBAnimation reveal type='fadeInLeft'>
                           <MDBCard cascade className='my-3 grey lighten-4'>
 
 
-                            <MDBCardHeader color={(bomba.vazamento == false) ? 'success-color lighten-1' : 'danger-color lighten-1'}>{bomba.nome}
-                    {((bomba.vazamento == true) ? <h7><i> - SINAIS DE VAZAMENTO {bomba.agua} L </i></h7> : '')}
+                            <MDBCardHeader color={(tanque.vazamento == false) ? 'success-color lighten-1' : 'danger-color lighten-1'}>{tanque.nome}
+                              {((tanque.vazamento == true) ? <i> - SINAIS DE VAZAMENTO {tanque.agua} L </i> : '')}
                             </MDBCardHeader>
                             <br></br>
-                            <MDBCol sm='4'>
-                              <MDBSimpleChart
-                                width={100}
-                                height={100}
-                                strokeWidth={10}
-                                percent={56}
-                                strokeColor='#4FB64E'
-                              />
-                            </MDBCol>
+                            <MDBRow>
 
+                              <MDBCol ms='4'>
+                                <MDBSimpleChart
+                                  width={100}
+                                  height={100}
+                                  strokeWidth={10}
+                                  percent={56}
+                                  strokeColor='#4FB64E'
+                                />
+                              </MDBCol>
+                              <MDBCol ms='4'>
 
-                            <MDBCardBody>
-                              <MDBCardTitle></MDBCardTitle>
-                              <MDBCardText>
-                                <h3>TEMPERATURA: {bomba.temperatura}</h3>
-                                <h3>NÍVEL: {bomba.nivel} L</h3>
-                                <h3>Água: {bomba.agua} L</h3>
-                              </MDBCardText>
-                              <MDBBtn color='deep-orange'>Relatório</MDBBtn>
-                            </MDBCardBody>
+                                <MDBCardText>
+                                  <p>
+                                    <strong>TEMPERATURA:</strong> {tanque.temperatura}
+                                  </p>
+                                  <p>
+                                    <strong>NÍVEL:</strong> {tanque.nivel} L
+                                  </p>
+                                  <p>
+                                    <strong>Água:</strong> {tanque.agua} L
+                                  </p>
+                                </MDBCardText>
+                              </MDBCol>
+
+                            </MDBRow>
 
 
                             <MDBCardBody cascade className='text-center'>
