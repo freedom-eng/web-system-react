@@ -271,7 +271,6 @@ class Routes extends React.Component {
           render={function() {
             //return <h1>Not Found</h1>;
             return (
-
               <Route component={Ambiente} />
             )
           }} 
