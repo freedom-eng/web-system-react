@@ -269,7 +269,11 @@ class Routes extends React.Component {
         {/* PRO-END */}
         <Route
           render={function() {
-            return <h1>Not Found</h1>;
+            //return <h1>Not Found</h1>;
+            return (
+
+              <Route component={Ambiente} />
+            )
           }} 
         />
       </Switch>
