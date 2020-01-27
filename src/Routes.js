@@ -9,6 +9,9 @@ import ModalsNavPage from './pages/ModalsNavPage';
 import AdvancedNavPage from './pages/AdvancedNavPage';
 import ComponentsNavPage from './pages/ComponentsNavPage';
 
+//Clientes
+import Posto from './pages/clientes/aconline/componentes/postos/Posto'
+
 // FREE
 import AnimationPage from './pages/AnimationPage';
 import AlertPage from './pages/AlertPage';
@@ -145,6 +148,9 @@ class Routes extends React.Component {
         <Route exact path='/navigation' component={NavigationNavPage} />
         <Route exact path='/tables' component={TablesNavPage} />
 
+        {/* Clientes */}
+        <Route exact path='/postos' component={Posto} />
+
         {/* FREE */}
         <Route path='/addons/iframe' component={IframePage} />
         <Route path='/addons/edge-header' component={EdgeHeaderPage} />
@@ -266,9 +272,9 @@ class Routes extends React.Component {
         <Route path='/tables/pro/tableeditable' component={TableEditable} />
         {/* PRO-END */}
         <Route
-          render={function() {
+          render={function () {
             return <h1>Not Found</h1>;
-          }} 
+          }}
         />
       </Switch>
     );
